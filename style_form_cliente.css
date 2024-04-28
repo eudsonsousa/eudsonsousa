@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1c92d2, #386e79);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    color: rgb(0, 0, 0);
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(7, 7, 7);
+    font-size: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: row; /* Alterado de column para row */
+    align-items: flex-start;
+    margin-left: 6%;
+    flex-wrap: wrap; /* Adicionado para permitir que os itens sejam exibidos em várias linhas */
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+.form-item {
+    width: 30%; /* Alterado de 50% para 30% para permitir que mais itens caibam em uma linha */
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="decimal"], input[type="date"] {
+    flex-basis: 50%;
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+input[type="submit"] {
+    flex-basis: 10%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14pt;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
